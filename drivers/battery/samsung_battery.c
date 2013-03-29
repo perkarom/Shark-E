@@ -1743,9 +1743,9 @@ monitor_finish:
 		(info->cable_type == POWER_SUPPLY_TYPE_BATTERY)) {
 		pr_info("%s: lpm with battery, maybe power off\n", __func__);
 		wake_lock_timeout(&info->monitor_wake_lock, 3 * HZ);
-	} else
+	} else {
 		wake_lock_timeout(&info->monitor_wake_lock, HZ / 4);
-
+	}
 	mutex_unlock(&info->mon_lock);
 
 	return;
