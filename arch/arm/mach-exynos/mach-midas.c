@@ -1547,22 +1547,22 @@ static struct samsung_battery_platform_data samsung_battery_pdata = {
 	.chg_curr_siop_lv2 = 475,
 	.chg_curr_siop_lv3 = 1,	/* zero make charger off */
 #else
-	.in_curr_limit = 1000,
-	.chg_curr_ta = 1000,
-	.chg_curr_dock = 1000,
+	.in_curr_limit = 1500,
+	.chg_curr_ta = 1500,
+	.chg_curr_dock = 1500,
 	.chg_curr_siop_lv1 = 475,
 	.chg_curr_siop_lv2 = 475,
 	.chg_curr_siop_lv3 = 475,
 #endif
 
-	.chg_curr_usb = 475,
+	.chg_curr_usb = 1000,
 	.chg_curr_cdp = 1000,
 #if defined(CONFIG_MACH_T0_USA_VZW)
-	.chg_curr_wpc = 650,
+	.chg_curr_wpc = 1000,
 #else
-	.chg_curr_wpc = 475,
+	.chg_curr_wpc = 1000,
 #endif
-	.chg_curr_etc = 475,
+	.chg_curr_etc = 1000,
 
 	.chng_interval = 30,
 	.chng_susp_interval = 60,
