@@ -1,0 +1,7 @@
+#!/system/bin/sh
+#
+#Credit to yank555
+#
+echo 1 > /sys/kernel/fast_charge/force_fast_charge
+echo 1000 > /sys/kernel/fast_charge/usb_charge_level
+echo 1500 > /sys/kernel/fast_charge/ac_charge_level
